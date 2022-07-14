@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da7f366a-d4e1-4323-817a-cfcec039e30e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mysql/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mysql/avatica-standalone-server-1.21.0-SNAPSHOT-shadow.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mysql/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/kendar/avatica/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/kendar/avatica/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/kendar/avatica/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +78,8 @@
       <updated>1657721104005</updated>
       <workItem from="1657721105200" duration="26000" />
       <workItem from="1657721263956" duration="2153000" />
-      <workItem from="1657784688110" duration="6536000" />
+      <workItem from="1657784688110" duration="7002000" />
+      <workItem from="1657799645635" duration="853000" />
     </task>
     <servers />
   </component>
@@ -98,5 +96,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/kendar/avatica/Main.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

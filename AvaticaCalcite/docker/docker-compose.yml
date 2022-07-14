@@ -22,7 +22,7 @@ services:
       - 8765:8765
     build: ./mysql/
     image: avatica-mysql-server
-    command: "-u 'jdbc:mysql://mysql:3306/prova'"
+    command: "-u 'jdbc:mysql://mysql:3306/prova?user=root&password=avatica'"
     depends_on:
       - mysql
   phpmyadmin:

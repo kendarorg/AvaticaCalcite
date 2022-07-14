@@ -12,9 +12,9 @@ public class Main {
         // define the JDBC URL; be sure to specify your own project ID
         String url = "jdbc:avatica:remote:url=http://localhost:8765"
                 + ";serialization=JSON"
-                + ";username=root"
-                + ";password=avatica"
-                + ";schema=prova"
+//                + ";username=root"
+//                + ";password=avatica"
+//                + ";schema=prova"
                 ;
 
         // get the bearer token from the environment variable
@@ -23,12 +23,13 @@ public class Main {
         // define query directed to "Koalas to the Max" table
         //String query = "SELECT continent, COUNT(*) AS counts FROM \"Koalas to the Max\" GROUP BY 1 ORDER BY counts DESC";
         //String query = "SELECT p.id,p.first,p.second FROM prova AS p";
-        String query = "SELECT * FROM prova;";
+        String query = "SELECT * FROM prova";
+        //query = "SHOW DATABASES";
 
 
         // instantiate a Properties object and store the token in the "password" key
         Properties connectionProperties = new Properties();
-        connectionProperties.setProperty("password", "avatica");
+        /*connectionProperties.setProperty("password", "avatica");
         connectionProperties.setProperty("user", "root");
         //connectionProperties.setProperty("database", "prova");*/
 
@@ -45,9 +46,10 @@ public class Main {
                 while (rs.next()) {
                     //rs.get
                     long id = rs.getLong("id");
-                    String first = rs.getString("first");
-                    String second = rs.getString("second");
-                    System.out.println(id + "|" + first + "|" + second);
+                    String first = rs.getString("primo");
+                    int second = rs.getInt("secondo");
+                    String thrid = rs.getString("terzo");
+                    System.out.println(id + "|" + first + "|" + second+ "|" + thrid);
                 }
             }
         } catch (Exception e) {
